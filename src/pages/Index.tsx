@@ -138,7 +138,7 @@ const Index = () => {
             </motion.h2>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {reviews.map((review, i) => (
               <motion.div
                 key={i}
@@ -158,7 +158,10 @@ const Index = () => {
                     <p className="text-muted-foreground text-sm leading-relaxed flex-1 mb-4">
                       "{review.text}"
                     </p>
-                    <p className="text-foreground font-semibold text-sm">{review.name}</p>
+                    <div className="flex items-center justify-between">
+                      <p className="text-foreground font-semibold text-sm">{review.name}</p>
+                      <p className="text-muted-foreground text-xs">{review.time}</p>
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>
