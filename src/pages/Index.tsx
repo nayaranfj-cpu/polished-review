@@ -28,6 +28,12 @@ const reviews = [
     stars: 5,
     time: "1 mês atrás",
   },
+  {
+    name: "Bruna Stéfany",
+    text: "Excelente profissional, é realista com a situação e com as possibilidades que podem ser trabalhadas. Recomendo.",
+    stars: 5,
+    time: "5 meses atrás",
+  },
 ];
 
 const services = [
@@ -138,7 +144,7 @@ const Index = () => {
             </motion.h2>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {reviews.map((review, i) => (
               <motion.div
                 key={i}
