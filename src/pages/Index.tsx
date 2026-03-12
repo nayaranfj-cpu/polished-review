@@ -28,6 +28,12 @@ const reviews = [
     stars: 5,
     time: "1 mês atrás",
   },
+  {
+    name: "Bruna Stéfany",
+    text: "Excelente profissional, é realista com a situação e com as possibilidades que podem ser trabalhadas. Recomendo.",
+    stars: 5,
+    time: "5 meses atrás",
+  },
 ];
 
 const services = [
