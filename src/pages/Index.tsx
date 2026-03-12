@@ -34,6 +34,12 @@ const reviews = [
     stars: 5,
     time: "5 meses atrás",
   },
+  {
+    name: "Mariane Augusto dos Santos",
+    text: "A doutora Nayara apareceu na minha vida no momento mais difícil. Ela é maravilhosa, entra na causa pra ganhar e se ver que não vai dar certo, já fala. Me dá atenção todas as vezes que preciso. Uma excelente profissional, um exemplo de ser humano. A palavra certa é Gratidão ❤",
+    stars: 5,
+    time: "2 anos atrás",
+  },
 ];
 
 const services = [
@@ -144,7 +150,7 @@ const Index = () => {
             </motion.h2>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {reviews.map((review, i) => (
               <motion.div
                 key={i}
