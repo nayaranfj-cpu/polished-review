@@ -17,24 +17,16 @@ const fadeUp = {
 
 const reviews = [
   {
-    name: "Maria S.",
-    text: "Graças à Dra. Nayara, meu marido conseguiu a progressão de regime no tempo certo. Profissional incrível e muito humana.",
+    name: "Patrícia Trazzi",
+    text: "Advogada competente, atua no caso explicando cada detalhe de uma forma bem clara. Super indico!!",
     stars: 5,
+    time: "1 mês atrás",
   },
   {
-    name: "Carlos A.",
-    text: "Atendimento excelente, sempre disponível para tirar dúvidas. Conseguiu a remição de pena do meu irmão rapidamente.",
+    name: "Vagner Rodrigues",
+    text: "A Dr. demonstra respeito, empatia e domínio técnico. Recomendo de olhos fechados!",
     stars: 5,
-  },
-  {
-    name: "Juliana R.",
-    text: "Muito competente e atenciosa. Resolveu a suspensão indevida de visita da minha família. Super recomendo!",
-    stars: 5,
-  },
-  {
-    name: "Roberto M.",
-    text: "Profissional séria e dedicada. Retificou os cálculos de pena do meu filho que estavam errados há meses.",
-    stars: 5,
+    time: "1 mês atrás",
   },
 ];
 
@@ -146,7 +138,7 @@ const Index = () => {
             </motion.h2>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {reviews.map((review, i) => (
               <motion.div
                 key={i}
@@ -166,7 +158,10 @@ const Index = () => {
                     <p className="text-muted-foreground text-sm leading-relaxed flex-1 mb-4">
                       "{review.text}"
                     </p>
-                    <p className="text-foreground font-semibold text-sm">{review.name}</p>
+                    <div className="flex items-center justify-between">
+                      <p className="text-foreground font-semibold text-sm">{review.name}</p>
+                      <p className="text-muted-foreground text-xs">{review.time}</p>
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>
